@@ -15,6 +15,10 @@ public final class R {
         public static final int abc_slide_in_top=0x7f040003;
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
+        public static final int tran_in=0x7f040006;
+        public static final int tran_out=0x7f040007;
+        public static final int tran_previous_in=0x7f040008;
+        public static final int tran_previous_out=0x7f040009;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1099,18 +1103,33 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int home_apps=0x7f020057;
-        public static final int home_callmsgsafe=0x7f020058;
-        public static final int home_netmanager=0x7f020059;
-        public static final int home_safe=0x7f02005a;
-        public static final int home_settings=0x7f02005b;
-        public static final int home_sysoptimize=0x7f02005c;
-        public static final int home_taskmanager=0x7f02005d;
-        public static final int home_tools=0x7f02005e;
-        public static final int home_trojan=0x7f02005f;
-        public static final int ic_launcher=0x7f020060;
-        public static final int launcher_bg=0x7f020061;
-        public static final int setup1=0x7f020062;
+        public static final int btn_green_normal=0x7f020057;
+        public static final int btn_green_pressed=0x7f020058;
+        public static final int btn_green_selector=0x7f020059;
+        public static final int btn_light_green_selector=0x7f02005a;
+        public static final int function_greenbutton_normal=0x7f02005b;
+        public static final int function_greenbutton_pressed=0x7f02005c;
+        public static final int gradient_box=0x7f02005d;
+        public static final int home_apps=0x7f02005e;
+        public static final int home_callmsgsafe=0x7f02005f;
+        public static final int home_netmanager=0x7f020060;
+        public static final int home_safe=0x7f020061;
+        public static final int home_settings=0x7f020062;
+        public static final int home_sysoptimize=0x7f020063;
+        public static final int home_taskmanager=0x7f020064;
+        public static final int home_tools=0x7f020065;
+        public static final int home_trojan=0x7f020066;
+        public static final int ic_launcher=0x7f020067;
+        public static final int launcher_bg=0x7f020068;
+        public static final int listview_divider=0x7f020069;
+        public static final int lock=0x7f02006a;
+        public static final int next=0x7f02006b;
+        public static final int previous=0x7f02006c;
+        public static final int setup1=0x7f02006d;
+        public static final int setup2=0x7f02006e;
+        public static final int setup3=0x7f02006f;
+        public static final int shape_selector=0x7f020070;
+        public static final int unlock=0x7f020071;
     }
     public static final class id {
         public static final int action_bar=0x7f09001c;
@@ -1124,7 +1143,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_close_button=0x7f090024;
-        public static final int action_settings=0x7f09004f;
+        public static final int action_settings=0x7f090052;
         public static final int activity_chooser_view_content=0x7f090025;
         public static final int always=0x7f09000f;
         public static final int beginning=0x7f090016;
@@ -1132,7 +1151,8 @@ containing a value of this type.
         public static final int bt_inputcancel=0x7f09003f;
         public static final int bt_inputok=0x7f09003e;
         public static final int bt_ok=0x7f090043;
-        public static final int cb_status=0x7f09004b;
+        public static final int bt_selectcontact=0x7f09004b;
+        public static final int cb_status=0x7f09004e;
         public static final int checkbox=0x7f09002d;
         public static final int collapseActionView=0x7f090010;
         public static final int default_activity_button=0x7f090028;
@@ -1144,6 +1164,7 @@ containing a value of this type.
         public static final int et_confirmpwd=0x7f090042;
         public static final int et_firstpwd=0x7f090041;
         public static final int et_inputpwd=0x7f09003d;
+        public static final int et_savenumber=0x7f09004a;
         public static final int expand_activities_button=0x7f090026;
         public static final int expanded_menu=0x7f09002c;
         public static final int gv_home=0x7f090045;
@@ -1162,7 +1183,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f090004;
         public static final int progress_horizontal=0x7f090005;
         public static final int radio=0x7f09002f;
-        public static final int rl_root=0x7f09004d;
+        public static final int rl_root=0x7f090050;
         public static final int search_badge=0x7f090032;
         public static final int search_bar=0x7f090031;
         public static final int search_button=0x7f090033;
@@ -1177,19 +1198,20 @@ containing a value of this type.
         public static final int showCustom=0x7f09000b;
         public static final int showHome=0x7f09000c;
         public static final int showTitle=0x7f09000d;
-        public static final int siv_update=0x7f090048;
+        public static final int siv_update=0x7f090049;
         public static final int split_action_bar=0x7f09001e;
         public static final int submit_area=0x7f090039;
         public static final int tabMode=0x7f090008;
         public static final int title=0x7f09002b;
         public static final int top_action_bar=0x7f090020;
-        public static final int tv_desc=0x7f09004a;
+        public static final int tv_desc=0x7f09004d;
         public static final int tv_inputpwd=0x7f09003c;
         public static final int tv_item=0x7f090047;
-        public static final int tv_progress=0x7f09004e;
+        public static final int tv_progress=0x7f090051;
+        public static final int tv_savenumber=0x7f090048;
         public static final int tv_setpwd=0x7f090040;
-        public static final int tv_title=0x7f090049;
-        public static final int tv_version=0x7f09004c;
+        public static final int tv_title=0x7f09004c;
+        public static final int tv_version=0x7f09004f;
         public static final int up=0x7f090021;
         public static final int useLogo=0x7f09000e;
         public static final int withText=0x7f090013;
@@ -1249,12 +1271,15 @@ containing a value of this type.
         public static final int home_activity_layout=0x7f03001a;
         public static final int home_item_list_layout=0x7f03001b;
         public static final int save_activity_layout=0x7f03001c;
-        public static final int save_guide_introduce_layout=0x7f03001d;
-        public static final int setting_activity_layout=0x7f03001e;
-        public static final int setting_item_view_layout=0x7f03001f;
-        public static final int splash_activity_item_layout=0x7f030020;
-        public static final int splash_activity_layout=0x7f030021;
-        public static final int support_simple_spinner_dropdown_item=0x7f030022;
+        public static final int save_guide1_layout=0x7f03001d;
+        public static final int save_guide2_layout=0x7f03001e;
+        public static final int save_guide3_layout=0x7f03001f;
+        public static final int save_guide4_layout=0x7f030020;
+        public static final int setting_activity_layout=0x7f030021;
+        public static final int setting_item_view_layout=0x7f030022;
+        public static final int splash_activity_item_layout=0x7f030023;
+        public static final int splash_activity_layout=0x7f030024;
+        public static final int support_simple_spinner_dropdown_item=0x7f030025;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1333,18 +1358,19 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b008c;
-        /** 
-            	<TextView 
-   	    android:layout_width="match_parent"
-   	    android:layout_height="wrap_content"
-   	    android:text="您的手机防盗卫士:"
-   	    android:textSize="20sp"
-   	    android:layout_marginTop="5dp"
-   	    android:layout_marginLeft="5dp"
-   	    />
-    
+        public static final int ContentStyle=0x7f0b0090;
+        /**  	<Button 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+		    android:background="@drawable/btn_green_selector"
+		    android:drawableRight="@drawable/next"
+		    android:text="下一步"
+		    /> 
          */
-        public static final int ContentStyle=0x7f0b008e;
+        public static final int NextStyle=0x7f0b008d;
+        public static final int PreviousStyle=0x7f0b008e;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
@@ -1453,20 +1479,7 @@ containing a value of this type.
         /**  Base platform-dependent theme providing a light-themed activity. 
          */
         public static final int Theme_Base_Light=0x7f0b007f;
-        /** 
-        <TextView 
-	    android:id="@+id/tv_funclist"
-	    android:layout_width="match_parent"
-	    android:layout_height="50sp"
-	    android:background="#00ccff"
-	    android:gravity="center"
-	    android:text="功能列表"
-	    android:textColor="#000"
-	    android:textSize="22sp"
-	    />
-    
-         */
-        public static final int TitleStyle=0x7f0b008d;
+        public static final int TitleStyle=0x7f0b008f;
         /**  Styles in here can be extended for customisation in your application. Each utilises
          one of the Base styles. If Holo themes are available on the current platform version
          they will be used instead of the compat styles. 

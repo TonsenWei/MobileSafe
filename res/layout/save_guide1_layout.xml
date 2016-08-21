@@ -80,11 +80,7 @@
             android:src="@drawable/setup1"
             tools:ignore="ContentDescription" />
 		<Button 
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_alignParentRight="true"
-		    android:layout_alignParentBottom="true"
-		    android:text="下一步"
+			style="@style/NextStyle"
 		    />
     </RelativeLayout>
 

@@ -16,19 +16,38 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    	<!-- 	<Button 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+		    android:background="@drawable/btn_green_selector"
+		    android:drawableRight="@drawable/next"
+		    android:text="下一步"
+		    /> -->
+	<style name="NextStyle">
+	    <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/btn_green_selector</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:text">下一步</item>
+        <item name="android:onClick">next</item>
+	</style>
+	
+	<style name="PreviousStyle">
+	    <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/btn_green_selector</item>
+        <item name="android:drawableRight">@drawable/previous</item>
+        <item name="android:text">上一步</item>
+        <item name="android:onClick">previous</item>
+	</style>
 
-    <!--
-        <TextView 
-	    android:id="@+id/tv_funclist"
-	    android:layout_width="match_parent"
-	    android:layout_height="50sp"
-	    android:background="#00ccff"
-	    android:gravity="center"
-	    android:text="功能列表"
-	    android:textColor="#000"
-	    android:textSize="22sp"
-	    />
-    -->
     <style name="TitleStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50sp</item>
@@ -38,22 +57,12 @@
         <item name="android:textSize">22sp</item>
     </style>
 
-    <!--
-            	<TextView 
-   	    android:layout_width="match_parent"
-   	    android:layout_height="wrap_content"
-   	    android:text="您的手机防盗卫士:"
-   	    android:textSize="20sp"
-   	    android:layout_marginTop="5dp"
-   	    android:layout_marginLeft="5dp"
-   	    />
-    -->
-
     <style name="ContentStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
         <item name="android:textSize">20sp</item>
     </style>
 

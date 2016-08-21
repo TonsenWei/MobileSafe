@@ -92,7 +92,7 @@ public class HomeActivity extends Activity {
 					if (sharedPreferences.getBoolean("haveenter", false)) {// 进入过向导
 						startActivity(new Intent(HomeActivity.this, SaveActivity.class));// 进入过则直接到防盗界面
 					} else {// 没有进入过,开启向导
-						// TODO
+						startActivity(new Intent(HomeActivity.this, SaveGuide1Activity.class));
 					}
 					dailog.dismiss();
 				} else {// 密码错误
@@ -134,7 +134,7 @@ public class HomeActivity extends Activity {
 						if (sharedPreferences.getBoolean("haveenter", false)) {// 进入过向导
 							startActivity(new Intent(HomeActivity.this, SaveActivity.class));// 进入过则直接到防盗界面
 						} else {// 没有进入过,开启向导
-							// TODO
+							startActivity(new Intent(HomeActivity.this, SaveGuide1Activity.class));
 						}
 						dailog.dismiss();
 					} else {// 密码不匹配

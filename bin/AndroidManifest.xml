@@ -28,6 +28,10 @@
         <activity android:name="com.example.mobilesafe.activity.HomeActivity"></activity>
         <activity android:name="com.example.mobilesafe.activity.SettingActivity"></activity>
         <activity android:name="com.example.mobilesafe.activity.SaveActivity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SaveGuide1Activity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SaveGuide2Activity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SaveGuide3Activity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SaveGuide4Activity"></activity>
     </application>
 
 </manifest>
