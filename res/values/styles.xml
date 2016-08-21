@@ -1,0 +1,60 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!--
+        <TextView 
+	    android:id="@+id/tv_funclist"
+	    android:layout_width="match_parent"
+	    android:layout_height="50sp"
+	    android:background="#00ccff"
+	    android:gravity="center"
+	    android:text="功能列表"
+	    android:textColor="#000"
+	    android:textSize="22sp"
+	    />
+    -->
+    <style name="TitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50sp</item>
+        <item name="android:background">#00ccff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!--
+            	<TextView 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="您的手机防盗卫士:"
+   	    android:textSize="20sp"
+   	    android:layout_marginTop="5dp"
+   	    android:layout_marginLeft="5dp"
+   	    />
+    -->
+
+    <style name="ContentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>
