@@ -90,9 +90,9 @@ public class HomeActivity extends Activity {
 				String getInputPassword = etInputPassword.getText().toString().trim();
 				if (MD5Utils.MD5Encode(getInputPassword).equals(password)) {// 密码正确
 					if (sharedPreferences.getBoolean("haveenter", false)) {// 进入过向导
-						startActivity(new Intent(HomeActivity.this, SaveActivity.class));// 进入过则直接到防盗界面
+						startActivity(new Intent(HomeActivity.this, SafeActivity.class));// 进入过则直接到防盗界面
 					} else {// 没有进入过,开启向导
-						startActivity(new Intent(HomeActivity.this, SaveGuide1Activity.class));
+						startActivity(new Intent(HomeActivity.this, SafeGuide1Activity.class));
 					}
 					dailog.dismiss();
 				} else {// 密码错误
@@ -132,9 +132,9 @@ public class HomeActivity extends Activity {
 						// 把密码MD5加密后保存到sp
 						sharedPreferences.edit().putString("password", MD5Utils.MD5Encode(confirmPassword)).commit();
 						if (sharedPreferences.getBoolean("haveenter", false)) {// 进入过向导
-							startActivity(new Intent(HomeActivity.this, SaveActivity.class));// 进入过则直接到防盗界面
+							startActivity(new Intent(HomeActivity.this, SafeActivity.class));// 进入过则直接到防盗界面
 						} else {// 没有进入过,开启向导
-							startActivity(new Intent(HomeActivity.this, SaveGuide1Activity.class));
+							startActivity(new Intent(HomeActivity.this, SafeGuide1Activity.class));
 						}
 						dailog.dismiss();
 					} else {// 密码不匹配

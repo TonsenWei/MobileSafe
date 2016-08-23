@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/safe_guide2_lt"
     android:orientation="vertical" >
 
     <TextView
@@ -23,7 +24,7 @@
         android:text="就会发送报警短信" />
 
     <com.example.mobilesafe.view.SettingItemView
-        android:id="@+id/siv_update"
+        android:id="@+id/siv_bindsim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         myandroid:desc_off="SIM卡没有绑定"

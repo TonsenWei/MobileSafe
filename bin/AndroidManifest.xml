@@ -10,6 +10,14 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -27,11 +35,41 @@
         </activity>
         <activity android:name="com.example.mobilesafe.activity.HomeActivity"></activity>
         <activity android:name="com.example.mobilesafe.activity.SettingActivity"></activity>
-        <activity android:name="com.example.mobilesafe.activity.SaveActivity"></activity>
-        <activity android:name="com.example.mobilesafe.activity.SaveGuide1Activity"></activity>
-        <activity android:name="com.example.mobilesafe.activity.SaveGuide2Activity"></activity>
-        <activity android:name="com.example.mobilesafe.activity.SaveGuide3Activity"></activity>
-        <activity android:name="com.example.mobilesafe.activity.SaveGuide4Activity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SafeActivity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SafeGuide1Activity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SafeGuide2Activity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SafeGuide3Activity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.SafeGuide4Activity"></activity>
+        <activity android:name="com.example.mobilesafe.activity.ContactActivity"></activity>
+        
+        <receiver android:name="com.example.mobilesafe.receiver.BootCompleteReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.example.mobilesafe.receiver.SmsReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.example.mobilesafe.service.LocationService"></service>   
+        
+        <receiver
+            android:name="com.example.mobilesafe.receiver.AdminReceiver"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+         
     </application>
 
 </manifest>

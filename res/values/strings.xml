@@ -4,5 +4,7 @@
     <string name="app_name">手机卫士</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="sample_device_admin_description">打开手机卫士的设备管理器可以一键锁屏和清除数据</string>
+    <string name="sample_device_admin">手机卫士设备管理器</string>
 
 </resources>
